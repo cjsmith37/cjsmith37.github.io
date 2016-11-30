@@ -167,7 +167,7 @@
             </div>
             
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
+                /*<div class="col-lg-4 col-lg-offset-2">
                     <h3>Education</h3>                    
                     <p>Vivamus orci tellus, posuere at ex eu, condimentum cursus tortor. Donec odio lorem, tempor finibus tincidunt nec, pharetra eget orci. Aenean mi nibh, rhoncus sollicitudin accumsan eget, mollis non nibh. In luctus at leo vitae malesuada. Integer id ultricies sapien. Cras convallis dolor non porta faucibus. Praesent quam ligula, consectetur ut consequat non, ultrices sit amet lectus. Pellentesque ultrices quam ac metus pulvinar, et laoreet lectus pretium. Nullam sit amet rhoncus velit.</p>
                 </div>
@@ -213,7 +213,112 @@
                     <p><u>Trusted Friend</u> - Phone number, addresss, mail@email.com</p>  
             </div>
             </div>
-        </div>
+        </div>*/
+        
+        <head>
+        <style>
+button.accordion {
+    background-color: #ebb077;
+    color: #fff8d0;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+button.accordion.active, button.accordion:hover {
+    background-color: #dec8be;
+}
+div.panel {
+    padding: 0 18px;
+    background-color: bisque;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+}
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+)'\02795' */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) "\2796"*/
+}
+        </style>
+    </head>
+
+<body>
+
+<div align="center">
+<h1><b>My Name</b></h1>
+<h2>Address, City, State Zipcode</h2>
+<h2>___-__-__ | <a href='mailto:mail@email.com' target="_blank">mail@gmail.com</a> | <a href='LinkedIn profile' target="_blank">LinkedIn profile</a></h2>
+</div>
+
+<br>
+<button class="accordion">Education</button>
+<div class="panel">
+<p>Vivamus orci tellus, posuere at ex eu, condimentum cursus tortor. Donec odio lorem, tempor finibus tincidunt nec, pharetra eget orci. Aenean mi nibh, rhoncus sollicitudin accumsan eget, mollis non nibh. In luctus at leo vitae malesuada. Integer id ultricies sapien. Cras convallis dolor non porta faucibus. Praesent quam ligula, consectetur ut consequat non, ultrices sit amet lectus. Pellentesque ultrices quam ac metus pulvinar, et laoreet lectus pretium. Nullam sit amet rhoncus velit. Etiam imperdiet lectus a tellus tincidunt lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque nulla sapien, pellentesque non dui pharetra, dignissim rutrum turpis. In commodo tortor sed eros consequat vulputate. Suspendisse in tellus enim. Pellentesque vehicula, justo sollicitudin iaculis cursus, augue metus tempus nibh, sed congue nibh mauris mollis ex. Nam a eleifend risus.</p>
+    </div>
+
+<button class="accordion">Experience</button>
+<div class="panel">
+<p><b>First Job</b> - Ut sit amet ex tortor. Phasellus varius lorem non metus tempor suscipit. Duis et tellus sem. Fusce hendrerit suscipit purus, et sodales ex placerat et. Praesent eget justo tortor. Ut porta, tellus sed commodo tempus, odio ligula aliquet leo, ut tempor velit sapien et libero. Suspendisse potenti. Vestibulum ut viverra tortor, ac vulputate ipsum. Nulla arcu odio, interdum non malesuada vel, commodo et purus.</p>
+
+<p><b>Internship</b> - Nam turpis mauris, sollicitudin sed ex sed, ullamcorper fringilla quam. Nullam et accumsan mi, id hendrerit dolor. Ut tempor lorem quis vehicula ullamcorper. Aenean aliquet lectus commodo ultricies aliquam. Nullam tempus pharetra ornare. Phasellus maximus leo nec facilisis dictum. In hac habitasse platea dictumst. Fusce pretium leo ligula. Maecenas venenatis suscipit pulvinar. Phasellus sed lacinia erat. Pellentesque rhoncus ultricies diam, et interdum justo rhoncus a. Proin mauris dolor, congue quis faucibus eget, consectetur non est. Suspendisse potenti. Phasellus consectetur bibendum ex, in gravida augue finibus et.</p>
+
+<p><b>Qualifications</b> - Etiam imperdiet lectus a tellus tincidunt lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque nulla sapien, pellentesque non dui pharetra, dignissim rutrum turpis. In commodo tortor sed eros consequat vulputate. Suspendisse in tellus enim. Pellentesque vehicula, justo sollicitudin iaculis cursus, augue metus tempus nibh, sed congue nibh mauris mollis ex. Nam a eleifend risus. In ac turpis nec nunc aliquet vestibulum. Etiam eu egestas orci. Nam nibh eros, congue eget lacinia quis, suscipit quis erat. Integer non nunc ac dolor gravida luctus at eget dolor. Aenean nisl sapien, consequat quis magna quis, volutpat elementum nisi. Suspendisse et sodales lectus. Mauris et tempus velit, non mollis velit.</p>
+    </div>
+
+<button class="accordion">Skills</button>
+<div class="panel">
+<ul><li>Ut sit amet ex tortor.</li>
+<li>Nullam tempus pharetra ornare.</li>
+<li>Mauris et tempus velit, non mollis velit.</li>
+<li>Vestibulum ut viverra tortor, ac vulputate ipsum.</li>
+<li>Praesent id felis nunc.</li>
+<li>Sed ullamcorper bibendum nunc eget congue.</li>
+<li>Etiam imperdiet lectus a tellus tincidunt lobortis.</li>
+<li>Etiam eu egestas orci.</li></ul>
+</div>
+
+<button class="accordion">Awards</button>
+<div class="panel">
+<ul><li>Award 1, Organization, month/year</li>
+<li>Award 2, Organization, month/year</li>
+<li>Award 3, Organization, month/year</li>
+<li>Award 4, Organization, month/year</li></ul>
+</div>
+
+<button class="accordion">References</button>
+<div class="panel">
+<p><b>First Boss</b> - Phone number, address, mail@email.com</p>
+<p><b>Mentor</b> - Phone number, address, mail@email.com</p>
+<p><b>Professor</b> - Phone number, address, mail@email.com</p>
+<p><b>Family Member</b> - Phone number, address, mail@email.com</p>
+<p><b>Trusted Friend</b> - Phone number, addresss, mail@email.com</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+</body>
     </section>
 
     <!-- Contact Section -->
